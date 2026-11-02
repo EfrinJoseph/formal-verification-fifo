@@ -1,18 +1,13 @@
 # Run:  cd formal && sby -f fifo.sby
-[tasks]
-prove
-cover
-
 [options]
-prove: mode prove
-cover: mode cover
-cover: depth 16
+mode prove
+depth 10
 
 [engines]
-smtbmc z3
+smtbmc
 
 [script]
-read -formal -sv fifo.sv
+read -formal fifo.sv
 prep -top fifo
 
 [files]
