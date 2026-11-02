@@ -1,7 +1,3 @@
-# SymbiYosys output folders (generated on every run)
-formal/fifo_prove/
-formal/fifo_cover/
-formal/*_prove/
-formal/*_cover/
-*.vcd
+# SymbiYosys output folder (generated on every run)
 formal/fifo/
+*.vcd
